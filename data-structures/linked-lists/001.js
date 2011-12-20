@@ -1,7 +1,15 @@
 /*
+ * <!--
+ *  This program is distributed under
+ *  the terms of the MIT license.
+ *  Please see the LICENSE file for details.
+ * -->
+ */
+
+/*
  * Q: Create a singly linked-list structure in JavaScript.
  * Assume that the list contains integer values.
- */
+ */i
 
 /*____________________________________________________________________________*/
 
