@@ -9,7 +9,7 @@
 /*
  * Q: Create a singly linked-list structure in JavaScript.
  * Assume that the list contains integer values.
- */i
+ */
 
 /*____________________________________________________________________________*/
 
