@@ -16,19 +16,34 @@
  * list.
  */
 
+ /*____________________________________________________________________________*/
+
+/**
+ * @function {public static} flattenList
+ *
+ * Flattens the list.
+ */
 function flattenList() {
     var currentNode = head;
 
     while (currentNode) {
         if (currentNode.child) {
-            append(currentNode.child, tail);
+            append(currentNode.child);
         }
 
         currentNode = currentNode.next;
     }
 }
 
-function append(child, tail) {
+/**
+ * @function {public static} append
+ *
+ * Appends the child to the tail of the list,
+ * and updates the tail.
+ *
+ * @param {ListElement} child - the child node to append.
+ */
+function append(child) {
     var currentNode = null;
 
     tail.next = child;
@@ -43,6 +58,11 @@ function append(child, tail) {
     tail = currentNode;
 }
 
+/**
+ * @function {public static} unflattenList
+ *
+ * Unflattens the list.
+ */
 function unflattenList() {
     var currentNode = head;
 
@@ -55,6 +75,14 @@ function unflattenList() {
     tail = currentNode;
 }
 
+/**
+ * @function {public static} unflatten
+ *
+ * Recursively unbinds the childNode from its
+ * previous node.
+ *
+ * @param {ListElement} childNode - the node to unbind.
+ */
 function unflatten(childNode) {
     var currentNode = childNode;
 
