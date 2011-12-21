@@ -35,6 +35,15 @@ function ListElement(next, data) {
     this.data = data;
 }
 
+
+/**
+ * @function {public static} isTerminated
+ *
+ * Checks whether a list is cyclic or not.
+ *
+ * @return `true`, if the list is `null` terminated;
+ * `false` otherwise.
+ */
 function isTerminated() {
     var fast = null;
     var slow = null;
