@@ -17,7 +17,7 @@
 
 /**
  * @class {public} ListElement - denotes a list node.
- * @param {Elem} next - the next node. (null if it's tail)
+ * @param {ListElement} next - the next node. (null if it's tail)
  * @param {Integer} data - list data.
  */
 function ListElement(next, data) {

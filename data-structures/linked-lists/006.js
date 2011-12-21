@@ -9,7 +9,7 @@
 /*
  * Q: head and tail are global references to the first and last elements of a
  * singly linked list respectively.
- * Implement the methods with the following prototypes.
+ * Implement the methods with the following prototypes:
  *
  *      function remove(element);
  *      function insertAfter(element, data);
@@ -22,7 +22,7 @@
 
 /**
  * @class {public} ListElement - denotes a list node.
- * @param {Elem} next - the next node. (null if it's tail)
+ * @param {ListElement} next - the next node. (null if it's tail)
  * @param {Integer} data - list data.
  */
 function ListElement(next, data) {

@@ -7,8 +7,10 @@
  */
 
 /*
- * Write a method that finds an element in the linked list, given its data.
+ * Q: Devise a time and space efficient algorithm to find the mth-to-last element
+ * of a singly linked list.
  * Use the structure in 001.js as a template.
+ * Assume a global pointer to the head.
  */
 
  /*____________________________________________________________________________*/
@@ -24,25 +26,38 @@ function ListElement(next, data) {
 }
 
 /**
- * @function {public static} find
+ * @function {public static} findMToLast
  *
- * Finds the list element with the given data.
+ * Finds mth-to-last element of a list
  *
- * @param {ListElement} head - the head of the list.
- * @param {Integer} data - the data to find.
- * @return a reference to the list item if found, `null` otherwise.
+ * @param {Integer} m - the mth index to find the element at.
+ *
+ * @return the found element if exists, `null` otherwise.
  */
-function find(head, data) {
+function findMToLast(m) {
     var current = head;
+    var mBehind = head;
+    var i = 0;
 
-    while (current !== null && current.data !== data) {
-        current = current.next;
+    for (i = 0; i < m; i++) {
+        if (current.next) {
+            current = current.next;
+        } else {
+            return null;
+        }
     }
 
-    return current;
+    while (current.next) {
+        current = current.next;
+        mBehind = mBehind.next;
+    }
+
+    return mBehind;
 }
 
-/*____________________________________________________________________________*/
+ /*____________________________________________________________________________*/
+
+ var head = null;
 
 var firstElement = new ListElement(null, 20);
 var secondElement = new ListElement(null, 30);
@@ -51,24 +66,17 @@ var thirdElement = new ListElement(null, 40);
 firstElement.next = secondElement;
 secondElement.next = thirdElement;
 
-var item1 = find(firstElement, 20);
-var item2 = find(firstElement, 30);
-var item3 = find(firstElement, 40);
-var item4 = find(firstElement, 50);
+head = firstElement;
 
-console.log(item1);
-console.log(item2);
-console.log(item3);
-console.log(item4);
-
-/*____________________________________________________________________________*/
+console.log(findMToLast(3));
+console.log(findMToLast(2));
+console.log(findMToLast(1));
+console.log(findMToLast(0));
 
 /*
-Output: ($ /usr/bin/node 003.js)
+Output: ($ /usr/bin/node 007.js)
+null
 { next: { next: { next: null, data: 40 }, data: 30 }, data: 20 }
 { next: { next: null, data: 40 }, data: 30 }
 { next: null, data: 40 }
-null
 */
-
-
