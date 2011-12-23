@@ -10,6 +10,7 @@
  * Write an algorithm to do preorder traversal of the binary search
  * tree below. The traverse operation should take a delegete to print
  * the value of the node being traversed. Use the node structure in 002.js
+ * You may NOT use recursion.
  *
  *           110
  *         /     \
@@ -76,14 +77,35 @@ function delegate(node) {
  * @param {Function} delegate - the delegate to execute for each node.
  */
 function preorderTraversal(node, delegate) {
-    if (node === null) {
-        return;
+    var stack = [];
+
+    stack.push(node);
+
+    var current = null;
+    var right = null;
+    var left = null;
+
+    while (true) {
+        current = stack.pop();
+
+        if (!current) {
+            break;
+        }
+
+        delegate(current);
+
+        right = current.right;
+
+        if (right) {
+            stack.push(right);
+        }
+
+        left = current.left;
+
+        if (left) {
+            stack.push(left);
+        }
     }
-
-    delegate(node);
-
-    preorderTraversal(node.left, delegate);
-    preorderTraversal(node.right, delegate);
 }
 
 /*____________________________________________________________________________*/

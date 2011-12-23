@@ -34,6 +34,9 @@ function Node(left, right, value) {
     this.value = value;
 }
 
+/*
+ * Sample structure.
+ */
 var root = new Node(
     new Node(
         new Node(null, null, 11),

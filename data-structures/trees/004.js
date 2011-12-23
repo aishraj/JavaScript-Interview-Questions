@@ -48,6 +48,16 @@ var root = new Node(
 
 /*____________________________________________________________________________*/
 
+/**
+ * @function {public static} findNode
+ *
+ * Finds the node with a given value.
+ *
+ * @param {Node} root - the root node.
+ * @param {Integer} value - the value to seek.
+ *
+ * @return a reference to the found node if found, `null` otherwise.
+ */
 function findNode(root, value) {
     var current = root;
     var val = 0;
