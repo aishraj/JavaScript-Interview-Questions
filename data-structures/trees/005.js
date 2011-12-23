@@ -7,9 +7,7 @@
  */
 
 /*
- * Implement a non-recursive algorithm to look up a node in a binary search tree.
- * (i.e. find a node. given its value)
- * Use the tree you created in 003.js to test your algorithm.
+ * Implement the algorithm in 004.js using recursion.
  */
 
 /*____________________________________________________________________________*/
@@ -48,25 +46,40 @@ var root = new Node(
 
 /*____________________________________________________________________________*/
 
-function findNode(root, value) {
+/**
+ * for debugging.
+ */
+function trace(seek, found, level) {
+    console.log(
+        '   seek: ' + seek  +
+        ', found: ' + found +
+        ', level: ' + level );
+}
+
+function findNode(root, value, level) {
     var current = root;
     var val = 0;
 
-    while (current) {
-        val = current.value;
+    level = level || 0;
 
-        if (val === value) {
-            break;
-        }
-
-        if (val < value) {
-            current = current.right;
-        } else {
-            current = current.left;
-        }
+    if (current === null) {
+        return null;
     }
 
-    return current;
+    val = current.value;
+
+    if (val === value) {
+        trace(value, val, level);
+        return current;
+    }
+
+    if (val < value) {
+        trace(value, val, level);
+        return findNode(current.right, value, ++level);
+    }
+
+    trace(value, val, level);
+    return findNode(current.left, value, ++level);
 }
 
 /*____________________________________________________________________________*/
@@ -76,8 +89,18 @@ console.log(findNode(root, 22));
 console.log(findNode(root, 122));
 
 /*
-Output: ($ /usr/bin/node 004.js)
+Output: ($ /usr/bin/node 005.js)
+   seek: 18, found: 15, level: 0
+   seek: 18, found: 20, level: 1
+   seek: 18, found: 18, level: 2
 { left: null, right: null, value: 18 }
+   seek: 22, found: 15, level: 0
+   seek: 22, found: 20, level: 1
+   seek: 22, found: 22, level: 2
 { left: null, right: null, value: 22 }
+   seek: 122, found: 15, level: 0
+   seek: 122, found: 20, level: 1
+   seek: 122, found: 22, level: 2
 null
+
 */
