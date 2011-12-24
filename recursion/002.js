@@ -53,7 +53,7 @@ function trace(n, level) {
 function factorial(n, stack, level) {
     if (n > 1) {
         trace(n, level);
-        stack[level] = n * factorial(n-1, stack, ++level);
+        stack[level] = n * factorial(n-1, stack, level + 1);
         return stack[level];
     }
 
@@ -78,5 +78,5 @@ Output: ($ /usr/bin/node 002.js)
 >>> n:3 level:7
 >>> n:2 level:8
 >>> n:1 level:9
-[ 3840, 945, 384, 105, 48, 15, 8, 3, 2, 1 ]
+[ 3628800, 362880, 40320, 5040, 720, 120, 24, 6, 2, 1 ]
 */
