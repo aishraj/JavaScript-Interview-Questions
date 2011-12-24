@@ -38,21 +38,13 @@ function doPermute(input, output, used, len, level) {
         if (!used[i]) {
             output.push(input[i]);
 
-            //console.log('p1:' + output);
-
             used[i] = true;
-
-            //console.log('u1:' + used + ' level:' + level);
 
             doPermute(input, output, used, len, level+1);
 
             used[i] = false;
 
-            //console.log('u2:' + used + ' level:' + level);
-
             output.length = output.length - 1;
-
-            //console.log('p2:' + output);
         }
     }
 }
