@@ -67,7 +67,7 @@ function factorial(n, stack, level) {
 console.log(getAllFactorials(10));
 
 /*
-Output: ($ /usr/bin/node 004.js)
+Output: ($ /usr/bin/node 002.js)
 >>> n:10 level:0
 >>> n:9 level:1
 >>> n:8 level:2
