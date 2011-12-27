@@ -8,7 +8,7 @@
 
 /*
  * Write a code to reverse a String.
- * Do not use native helper like Array.reverse or String.reverse.
+ * Do not use native helpers like Array.reverse or String.reverse.
  */
 
 /*____________________________________________________________________________*/
