@@ -85,5 +85,4 @@ console.log(firstElement);
 Output: ($ /usr/bin/node 012.js)
 { next: { next: { next: [Object], data: 20 }, data: 30 }, data: 20 }
 { next: { next: { next: null, data: 60 }, data: 30 }, data: 20 }
-volkan@ronin ~/
 */
