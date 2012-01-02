@@ -66,14 +66,14 @@ function ListElement(next, data) {
 var firstElement  = new ListElement(null, 20);
 var secondElement = new ListElement(null, 30);
 var thirdElement  = new ListElement(null, 20);
-var fouthElement  = new ListElement(null, 20);
+var fourthElement = new ListElement(null, 20);
 var fifthElement  = new ListElement(null, 20);
 var sixthElement  = new ListElement(null, 60);
 
 firstElement.next  = secondElement;
 secondElement.next = thirdElement;
-thirdElement.next  = fouthElement;
-fouthElement.next  = fifthElement;
+thirdElement.next  = fourthElement;
+fourthElement.next = fifthElement;
 fifthElement.next  = sixthElement;
 
 console.log(firstElement);
