@@ -7,7 +7,7 @@
  */
 
 /*
- * Q: Write an algorithm to detect whether a singly-linked list is
+ * Write an algorithm to detect whether a singly-linked list is
  * cyclic, or acyclic.
  *
  * An example to an acyclic list is as follows:

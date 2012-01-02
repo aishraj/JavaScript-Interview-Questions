@@ -7,7 +7,7 @@
  */
 
 /*
- * Q: Start with the data structure in 008.js
+ * Start with the data structure in 008.js
  * Devise an algorithm to flatten the list, so that all the nodes appear
  * in a single-level doubly linked list.
  * Then write an algorithm to unflatten the flattened list back to its

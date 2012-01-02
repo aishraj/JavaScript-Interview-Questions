@@ -7,7 +7,7 @@
  */
 
 /*
- * Q: Devise a time and space efficient algorithm to find the mth-to-last element
+ * Devise a time and space efficient algorithm to find the mth-to-last element
  * of a singly linked list.
  * Use the structure in 001.js as a template.
  * Assume a global pointer to the head.

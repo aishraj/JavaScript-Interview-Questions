@@ -7,7 +7,7 @@
  */
 
 /*
- * Q: head and tail are global references to the first and last elements of a
+ * Head and tail are global references to the first and last elements of a
  * singly linked list respectively.
  * Implement the methods with the following prototypes:
  *

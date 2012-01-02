@@ -7,7 +7,7 @@
  */
 
 /*
- * Q: Start with the data structure in 001.js
+ * Start with the data structure in 001.js
  * Modify it, so that it can be used to hold the data
  * for a multi-level doubly linked list of integers.
  */
