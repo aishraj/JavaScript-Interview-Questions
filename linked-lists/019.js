@@ -9,7 +9,7 @@
 /*
  * Implement StackWithMin in 018.js, with the following ListElement structure:
  *
- *      function ListElement(next, data, min) {
+ *      function ListElement(next, data) {
  *          this.next = next;
  *          this.data = data;
  *      }
@@ -97,7 +97,6 @@ sp.peek = function() {
  * @extends Stack
  *
  * An extended `Stack` implementatin that tracks min values.
- *
  */
 function StackWithMin() {
     this.head = null;
