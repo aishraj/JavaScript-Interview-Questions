@@ -12,7 +12,6 @@
  *      function ListElement(next, data, min) {
  *          this.next = next;
  *          this.data = data;
- *          this.min  = min;
  *      }
  */
 
