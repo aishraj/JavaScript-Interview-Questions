@@ -50,9 +50,6 @@ var root = new Node(
     110
 );
 
-/*____________________________________________________________________________*/
-
-
 /**
  * @function {public static} findLowestCommonAncestor
  *
