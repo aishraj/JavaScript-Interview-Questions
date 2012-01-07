@@ -13,7 +13,11 @@
 
 /*____________________________________________________________________________*/
 
-
+/**
+ * @class {public} Queue
+ *
+ * Defines a Queue.
+ */
 function Queue() {
     this.s1 = new Stack();
     this.s2 = new Stack();
@@ -21,10 +25,24 @@ function Queue() {
 
 var qp = Queue.prototype;
 
+/**
+ * @function {public} Queue.add
+ *
+ * Add an item to the queue.
+ *
+ * @param {Integer} data - the item to be added.
+ */
 qp.add = function(data) {
     this.s1.push(data);
 };
 
+/**
+ * @function {public} Queue.peek
+ *
+ * Gets the value at the front of the queue, without removing the item.
+ *
+ * @return the value of the item at the front of the queue.
+ */
 qp.peek = function() {
     if (this.s2.head !== null) {
         return this.s2.peek();
@@ -37,6 +55,13 @@ qp.peek = function() {
     return this.s2.peek();
 };
 
+/**
+ * @function {public} Queue.remove
+ *
+ * Removes an item from the front of the queue and returns the value of it.
+ *
+ * @return the value of the removed item.
+ */
 qp.remove = function() {
     if (this.s2.head !== null) {
         return this.s2.pop();
