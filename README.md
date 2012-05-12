@@ -19,8 +19,15 @@ day-to-day work life, such as...
 * functional programming,
 * prototypal intheritance,
 * memoization, mapreduce,
-* and more of other fun stuff.
-    
+* and more of other fun stuff,
+* and they'll give you **an actual project** to work with if they see you as a "strong candidate".
+
+That is they don't play a game where the rules are created to generate a "virtual reality"
+to "keep people out". Per contra, they try to do their best to get to know you, both technically
+and behaviorally/culturally before they give their decision.
+
+And in my honest opinion, that's the proper approach to take.
+
 Actully I've been asked **mostly** what I mentioned 
 [in this **o2.js** blog post](http://o2js.com/2011/04/23/do-you-think-you-know-javascript-you-dont/),
 If you're serious about getting a decent **JavaScript Engineering** job
