@@ -1,6 +1,6 @@
 **Edit:**
 
-* Having been in around 50 60-to-90-minute JavaScript-related tech interviews,
+* Having been in around 50 60-to-90-minute JavaScript-related tech interviews, **every single day** for a month.
 * And having reach to an offer level from 3 of those firms that I interviewed
 **in 10 days** (it's a miracle, when you consider the hiring process may
 take up to several months), 
