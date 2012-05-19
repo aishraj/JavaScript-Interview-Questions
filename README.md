@@ -1,7 +1,7 @@
 **Edit:**
 
-* Having been in around 50 60-to-90-minute JavaScript-related tech interviews, **every single day** for a month (yeah I'm doing the math right, I had triple interviews on certain days, double interview in others -- dunno how many brain cells I've lost in the meantime : ).
-* And having reach to an offer level from 3 of those firms that I interviewed
+* Having been in around fifty 60-to-90-minute JavaScript-related tech interviews, **every single day** for a month (yeah I'm doing the math right, I had triple interviews on certain days, double interview in others -- dunno how many brain cells I've lost in the meantime : ).
+* And having reached to an offer level from 3 of those firms that I interviewed
 **in 10 days** (it's a miracle, when you consider the hiring process may
 take up to several months), 
 * And having accepted an offer with a generous
